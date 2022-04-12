@@ -1,1 +1,58 @@
-ECHO is on.
+/*--Start Global rules--*/
+:root{
+    --gray-bg-color:#F8F9FD;
+    --white-bg-color:#FFFFFF;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    margin: 0;
+    list-style: none;
+}
+h1,h2,h3{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;/* max width 575px */
+}
+
+/*---Start Media query --*/
+
+    /*--Small secreen--*/
+    @media (min-width:768px) {
+        .container{
+            width: 750px;
+        }
+    }
+
+    /*--Medium secreen--*/
+    @media (min-width:992px) {
+        .container{
+            width: 957px;
+        }
+    }
+
+    /*--Larg secreen--*/
+    @media (min-width:1200px) {
+        .container{
+            width: 1170px;
+        }
+    }
+/*---End Media query --*/
+
+
+/*--End Globel rules--*/
