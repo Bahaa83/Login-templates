@@ -95,9 +95,6 @@ background-color: var(--gray-bg-color);
     font-weight: 500;
 }
 
-.header-form .social{
-    
-}
 
 .header-form .social a{
     color: #777;
@@ -112,9 +109,6 @@ background-color: var(--gray-bg-color);
     border: none;
 }
 
-.header-form .social a i{
-    
-}
 
 .content-form{
     padding: 0 30px;
@@ -128,12 +122,6 @@ background-color: var(--gray-bg-color);
     border: 1px solid #ddd;
     padding-left: 10px;
     border-radius: 5px;
-}
-.content-form input:first-child{
-    
-}
-.content-form input:nth-child(2){
-   
 }
 
 .content-form input:nth-child(3){
@@ -168,10 +156,6 @@ background-color: var(--gray-bg-color);
     text-align: center;
     color: #777;
     margin-bottom: 50px;
-}
-
-.p-footer p{
-    
 }
 
 .p-footer a{
