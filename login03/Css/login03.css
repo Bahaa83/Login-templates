@@ -2,6 +2,7 @@
 :root{
     --gray-bg-color:#F8F9FD;
     --white-bg-color:#FFFFFF;
+    --green-bg-color:#01d28e;
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -56,3 +57,126 @@ a{
 
 
 /*--End Globel rules--*/
+
+/*-- Start Main--*/
+.main{
+background-color: var(--gray-bg-color);
+}
+
+.main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main .container .login-form{
+    background-color: var(--white-bg-color);
+    border-radius: 6px;
+    max-width: 40%;
+    overflow: hidden;
+    margin: 200px 0;
+    box-shadow: 2px 2px 40px 3px #ddd;
+}
+
+.main .container .login-form img{
+        max-width: 100%;
+}
+
+.header-form{
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-form h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.header-form .social{
+    
+}
+
+.header-form .social a{
+    color: #777;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.header-form .social a:hover{
+    color:var(--white-bg-color);
+    background-color: var(--green-bg-color);
+    border: none;
+}
+
+.header-form .social a i{
+    
+}
+
+.content-form{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content-form input{
+    height: 48px;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.content-form input:first-child{
+    
+}
+.content-form input:nth-child(2){
+   
+}
+
+.content-form input:nth-child(3){
+    color: var(--white-bg-color);
+    background-color: var(--green-bg-color);
+    border: none;  
+}
+
+.content-form .content-foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-form .content-foot input{
+    display: block;
+    margin-right: 15px;
+    background-color: var(--green-bg-color);
+}
+
+.content-form .content-foot label{
+    color: var(--green-bg-color);
+}
+
+.content-form .content-foot span{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: #777;
+}
+
+.p-footer{
+    text-align: center;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.p-footer p{
+    
+}
+
+.p-footer a{
+    color: var(--green-bg-color); 
+}
+
+
+/*-- Start Main--*/
