@@ -73,7 +73,6 @@ background-color: var(--gray-bg-color);
 .main .container .login-form{
     background-color: var(--white-bg-color);
     border-radius: 6px;
-    max-width: 40%;
     overflow: hidden;
     margin: 200px 0;
     box-shadow: 2px 2px 40px 3px #ddd;
@@ -134,6 +133,7 @@ background-color: var(--gray-bg-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .content-form .content-foot input{
     display: block;
