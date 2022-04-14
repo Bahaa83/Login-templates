@@ -1,1 +1,185 @@
-ECHO is on.
+/*--Start Global rules--*/
+:root{
+    --gray-bg-color:#F8F9FD;
+    --white-bg-color:#FFFFFF;
+    --darkYellow-bg-color:#E3B04B;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    margin: 0;
+    list-style: none;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*---Start Media query --*/
+
+    /*--Small secreen--*/
+    @media (max-width:700px) {
+        .container{
+            width:90%
+        }
+    }
+    /*--Medium and larg secreen--*/
+    @media (min-width:701px) {
+        .container{
+            width:70%
+        }
+    }
+    
+/*---End Media query --*/
+
+
+/*--End Globel rules--*/
+
+/*-- Start Main--*/
+.main{
+    background-color: var(--gray-bg-color);
+    padding: 200px 0;
+}
+
+
+
+.main .container .form{
+    display: flex;
+    border-radius: 6px;
+    box-shadow: 1px 0px 9px 0px #eee;
+}
+@media (max-width:830px) {
+    .main .container .form{
+        flex-direction: column;
+    }
+}
+
+.main .container .form .img-form{
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.main .container .form .img-form img{
+    width: 100% ;
+    border-radius: 6px 0 0 6px;
+    height: 100%;
+}
+@media (max-width:830px) {
+    .main .container .form .img-form img{
+        height: 350px;
+        border-radius: 6px  6px 0 0;
+    }
+}
+
+.main .container .form .login-form{
+    flex-basis: 50%;
+    border-radius: 0 6px 6px 0;
+    padding: 40px 20px;
+    background-color: var(--white-bg-color);
+}
+
+@media (max-width:830px) {
+    .main .container .form .login-form{
+        padding: 40px 20px;
+        border-radius: 0 0 6px 6px;
+    }
+}
+
+.main .container .form .login-form .form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main .container .form .login-form .form-header h1{
+    font-weight: 500;
+}
+
+.main .container .form .login-form .form-header .social a{
+    padding: 12px;
+    margin-left: 8px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.main .container .form .login-form .form-header .social a:hover{
+    background-color: var(--darkYellow-bg-color);
+}
+.main .container .form .login-form .form-header .social a i{
+    font-size: 18px;
+    color: #777;
+    transition: 0.3s;
+}
+
+.main .container .form .login-form .form-header .social a:hover i{
+    color:var(--white-bg-color);
+}
+.login-form .form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-form .form-content input{
+    height: 48px;
+    padding: 5px 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.login-form .form-content input:nth-child(5){
+    background: var(--darkYellow-bg-color);
+    color: var(--white-bg-color);
+}
+
+.login-form .form-content .foot-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login-form .form-content .foot-content .foot{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--darkYellow-bg-color);
+}
+
+.foot-content .foot input[type="checkbox"]:checked {
+    background-color: var(--darkYellow-bg-color);
+    color: var(--white-bg-color);
+}
+
+.login-form .form-content .foot-content a span{
+color: #777;
+}
+
+.container .p-footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container .p-footer p a{
+    color: var(--darkYellow-bg-color);
+    margin-left: 5px;
+}
+
+
+/*-- End Main--*/
